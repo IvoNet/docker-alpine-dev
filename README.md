@@ -2,6 +2,8 @@
 
 Docker image for: alpine-dev
 
+This should be a builder image for alpine stuff
+
 # Usage
 
 See `run.sh` and `alpine-dev.sh` for examples on how to run the application.
