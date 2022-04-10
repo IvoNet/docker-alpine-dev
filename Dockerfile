@@ -1,10 +1,9 @@
-FROM alpine:3.11.3
+FROM alpine:3.15.4
 LABEL maintainer="Ivo Woltring - @ivonet"
 
 ARG VERSION=1.0
 
 LABEL org.label-schema.name="Alpine development image" \
-    org.label-schema.description="DLNA Serviio 2.0" \
     org.label-schema.url="https://ivonet.nl/" \
     org.label-schema.vcs-url="https://github.com/ivonet/docker-alpine-dev" \
     org.label-schema.version=$VERSION \
@@ -13,8 +12,8 @@ LABEL org.label-schema.name="Alpine development image" \
 
 ENV JAVA_HOME="/usr"
 
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.7/community" >> /etc/apk/repositories; \
-    echo "http://dl-cdn.alpinelinux.org/alpine/v3.7/main" >> /etc/apk/repositories; \
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.9/community" >> /etc/apk/repositories; \
+    echo "http://dl-cdn.alpinelinux.org/alpine/v3.9/main" >> /etc/apk/repositories; \
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories; \
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories; \
